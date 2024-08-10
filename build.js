@@ -7,7 +7,8 @@ const buildOptions = {
 	bundle: true,
 	format: 'esm',
 	treeShaking: true,
-	minify: false,
+	minify: process.env.NODE_ENV === 'production',
+	sourcemap: true,
 	absWorkingDir: __dirname,
 	outbase: `${__dirname}/src`,
 	outdir: `${__dirname}/dist`,
@@ -15,6 +16,9 @@ const buildOptions = {
 		'.ts': 'ts'
 	},
 	tsconfig: `${__dirname}/tsconfig.json`,
+	define: {
+		'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
+	}
 };
 
 (async () => {

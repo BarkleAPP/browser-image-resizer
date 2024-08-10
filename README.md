@@ -14,9 +14,9 @@ This library allows for cross-browser image downscaling utilizing `OffscreenCanv
 
 ### NPM/Yarn/pnpm
 
-- `npm install @misskey-dev/browser-image-resizer`
-- `yarn add @misskey-dev/browser-image-resizer`
-- `pnpm add @misskey-dev/browser-image-resizer`
+- `npm install @barkleapp/browser-image-resizer`
+- `yarn add @barkleapp/browser-image-resizer`
+- `pnpm add @barkleapp/browser-image-resizer`
 
 ## Usage
 

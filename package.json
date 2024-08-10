@@ -1,10 +1,18 @@
 {
-  "name": "@misskey-dev/browser-image-resizer",
-  "version": "2024.1.0",
+  "name": "@barkleapp/browser-image-resizer",
+  "version": "2.0.0",
   "description": "A browser-based utility to downscale and resize images using OffscreenCanvas",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "author": "Eric Nograles <grales@gmail.com>",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "author": "Eric Nograles <grales@gmail.com>. Fork by BanditCo",
   "license": "MIT",
   "packageManager": "pnpm@8.6.12",
   "files": [
@@ -19,5 +27,5 @@
     "dev": "node build.js watch",
     "test": "cd tests/vite-project && pnpm run dev"
   },
-  "repository": "https://github.com/misskey-dev/browser-image-resizer.git"
+  "repository": "https://github.com/BarkleAPP/browser-image-resizer.git"
 }
